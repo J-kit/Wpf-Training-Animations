@@ -1,0 +1,35 @@
+﻿<Window x:Class="Rotation_03_10_17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rotation_03_10_17"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel>
+        <StackPanel Width="150" DockPanel.Dock="Right" Background="Beige">
+            <Button x:Name="butRotation" Content="Rotation" Click="butRotation_Click"/>
+            <Label x:Name="label" Content="Rotationszentrum:"/>
+            <GroupBox x:Name="groupBox" Header="horizontale Ausrichtung">
+                <Grid>
+                    <RadioButton x:Name="rbtLinks" Content="Links"  Margin="10,10,0,0" IsChecked="True" Checked="rbtLinks_Checked" />
+                    <RadioButton x:Name="rbtMitte" Content="Mitte"  Margin="10,30,0,0" Checked="rbtMitte_Checked" />
+                    <RadioButton x:Name="rbtRechts" Content="Rechts"  Margin="10,50,0,0" Checked="rbtRechts_Checked" />
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="groupBox2" Header="vertikale Ausrichtung">
+                <Grid>
+                    <RadioButton x:Name="rbtOben" Content="Oben"  Margin="10,10,0,0" IsChecked="True" Checked="rbtOben_Checked" />
+                    <RadioButton x:Name="rbtMitte2" Content="Mitte"  Margin="10,30,0,0" Checked="rbtMitte2_Checked" />
+                    <RadioButton x:Name="rbtUnten" Content="Unten"  Margin="10,50,0,0" Checked="rbtUnten_Checked" />
+                </Grid>
+            </GroupBox>
+            <Label x:Name="label1" Content="horizontal"/>
+            <Slider x:Name="sliHorizontal" Maximum="200" ValueChanged="sliHorizontal_ValueChanged" Minimum="-100"/>
+            <Label x:Name="label2" Content="vertikal"/>
+            <Slider x:Name="slivertikal" Maximum="200" ValueChanged="slivertikal_ValueChanged" Minimum="-100"/>
+        </StackPanel>
+        <Canvas Name="leinwand" Background="#FFD8F1F0"/>
+
+    </DockPanel>
+</Window>

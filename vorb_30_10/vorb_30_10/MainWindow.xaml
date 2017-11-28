@@ -1,0 +1,16 @@
+﻿<Window x:Class="vorb_30_10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:vorb_30_10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel>
+        <Button x:Name="button" Content="Button" Height="30" DockPanel.Dock="Top" Click="button_Click" />
+        <Canvas Name="leinwand" Background="#FFDEF9C3">
+            <Rectangle Name="rec" Fill="#FFF4F4F5" Height="100" Canvas.Left="0" Stroke="Black" Canvas.Top="100" Width="100"/>
+        </Canvas>
+
+    </DockPanel>
+</Window>

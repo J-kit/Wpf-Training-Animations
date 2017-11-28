@@ -1,0 +1,22 @@
+﻿<Window x:Class="Animation_Skalieren_17_10_17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animation_Skalieren_17_10_17"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel>
+        <StackPanel   Width="200" Background="#FFF7F4DD" DockPanel.Dock="Right">
+            <Button x:Name="butStart" Content="Animation starten" Padding="10" Click="butStart_Click"/>
+            <Label x:Name="label" Content="Zentrum der Skalierung"/>
+            <ComboBox x:Name="cbxZentrum" SelectedIndex="0" DropDownClosed="cbxZentrum_DropDownClosed">
+                <ComboBoxItem Content="Mitte"/>
+                <ComboBoxItem Content="Links oben"/>
+                <ComboBoxItem Content="Rechts unten"/>
+            </ComboBox>
+        </StackPanel>
+        <Canvas Name="leinwand" Background="#FFCDEED1" />
+
+    </DockPanel>
+</Window>
